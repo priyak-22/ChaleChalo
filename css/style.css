@@ -1,0 +1,26 @@
+.custom-modal {
+    max-width: 800px;  /* Increase width */
+}
+
+.custom-modal .modal-content {
+    min-height: 400px;
+}
+.custom-modal {
+    max-width: 800px;
+    width: 90%;
+}
+
+.custom-modal .modal-content {
+    min-height: auto;
+}
+
+@media (max-width: 576px) {
+    .custom-modal {
+        width: 95%;
+        margin: auto;
+    }
+
+    .custom-modal .modal-content {
+        min-height: auto;
+    }
+}
