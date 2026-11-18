@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - ChaleChalo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg cc-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand cc-brand" href="./index.html">
+                <img src="images/logo.svg" alt="ChaleChalo logo" class="cc-logo"> ChaleChalo
+            </a>
+
+            <button class="navbar-toggler cc-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./destination.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button type="button" class="btn cc-btn-outline">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="cc-page-hero">
+        <div class="container text-center">
+            <span class="cc-kicker cc-kicker-light">Explore India</span>
+            <h1 class="cc-page-title">Destinations Across India</h1>
+            <p class="cc-page-sub">From snowy mountains to serene backwaters — find your next adventure.</p>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="cc-section">
+        <div class="container">
+            <div class="cc-filter-bar text-center">
+                <button class="cc-chip active" data-filter="all">All</button>
+                <button class="cc-chip" data-filter="north">North India</button>
+                <button class="cc-chip" data-filter="south">South India</button>
+                <button class="cc-chip" data-filter="east">East India</button>
+                <button class="cc-chip" data-filter="west">West India</button>
+                <button class="cc-chip" data-filter="northeast">Northeast</button>
+            </div>
+
+            <div class="row g-4" id="destinationGrid">
+                <!-- North -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="north">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hadimba_Devi_Temple%2C_Hidimba_Devi_Temple_Dhungari_Temple_Manali_and_around_vrtmrgmpksk_%2841%29.jpg?width=800" alt="Hadimba Temple, Manali"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">North India</span>
+                            <h5>Manali</h5>
+                            <p>Snow-capped peaks, pine forests and adventure sports in Himachal Pradesh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="north">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg?width=800" alt="Road to Padum, Ladakh"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">North India</span>
+                            <h5>Leh-Ladakh</h5>
+                            <p>High-altitude desert landscapes, ancient monasteries and stark mountain beauty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="north">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?width=800" alt="Hawa Mahal, Jaipur"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">North India</span>
+                            <h5>Jaipur</h5>
+                            <p>The Pink City — forts, palaces and vibrant bazaars of Rajasthan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="north">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal%2C_Agra%2C_India.jpg?width=800" alt="Taj Mahal, Agra"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">North India</span>
+                            <h5>Agra</h5>
+                            <p>Home to the Taj Mahal and centuries of Mughal architectural grandeur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="north">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg?width=800" alt="Ghats of Varanasi"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">North India</span>
+                            <h5>Varanasi</h5>
+                            <p>One of the world's oldest living cities, spiritual heart of India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="north">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Trayambakeshwar_Temple_VK.jpg?width=800" alt="Trayambakeshwar Temple, Rishikesh"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">North India</span>
+                            <h5>Rishikesh</h5>
+                            <p>Yoga capital of the world on the banks of the Ganges.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- South -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="south">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Boathouse_%287063399547%29.jpg?width=800" alt="Houseboat, Kerala backwaters"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">South India</span>
+                            <h5>Kerala Backwaters</h5>
+                            <p>Houseboats, palm-fringed canals and Ayurveda retreats in God's Own Country.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="south">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tadiandamol_Valley%2C_Western_Ghats.jpg?width=800" alt="Tadiandamol Valley, Coorg"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">South India</span>
+                            <h5>Coorg</h5>
+                            <p>Rolling coffee estates and misty hills of Karnataka.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="south">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/BeachFun.jpg?width=800" alt="Beach in Goa"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">South India</span>
+                            <h5>Goa</h5>
+                            <p>Sun-kissed beaches, nightlife and Portuguese heritage on the west coast.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- East -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="east">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/DarjeelingTrainFruitshop_%282%29.jpg?width=800" alt="Darjeeling toy train"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">East India</span>
+                            <h5>Darjeeling</h5>
+                            <p>The "Queen of Hills" — tea gardens and views of Kanchenjunga.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="east">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Coral_Reef_at_the_Andaman_Islands.jpg?width=800" alt="Coral reef, Andaman Islands"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">East India</span>
+                            <h5>Andaman Islands</h5>
+                            <p>Crystal-clear waters, white-sand beaches and coral reefs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- West -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="west">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mumbai_Bandra-Worli_Sea_Link.jpg?width=800" alt="Bandra-Worli Sea Link, Mumbai"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">West India</span>
+                            <h5>Mumbai</h5>
+                            <p>The city that never sleeps — Bollywood, beaches and street food.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="west">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Evening_view%2C_City_Palace%2C_Udaipur.jpg?width=800" alt="City Palace, Udaipur"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">West India</span>
+                            <h5>Udaipur</h5>
+                            <p>City of Lakes with royal palaces reflected in tranquil waters.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Northeast -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-place-card" data-region="northeast">
+                        <div class="cc-place-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dawki_River%2C_Meghalaya%2C_India.jpg?width=800" alt="Dawki River, Meghalaya"></div>
+                        <div class="cc-place-body">
+                            <span class="cc-place-region">Northeast India</span>
+                            <h5>Meghalaya</h5>
+                            <p>Living root bridges, waterfalls and the rainiest place on Earth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 d-none" id="noResults">
+                <p class="cc-muted-text">No destinations found in this region yet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cc-footer">
+        <div class="container text-center">
+            <p class="cc-footer-brand mb-2"><img src="images/logo.svg" alt="ChaleChalo logo" class="cc-footer-logo">
+                ChaleChalo</p>
+            <p class="mb-0">© 2026 ChaleChalo Travel App | Designed with Bootstrap</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

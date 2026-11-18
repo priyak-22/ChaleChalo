@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChaleChalo - Travel App</title>
+    <title>ChaleChalo - Explore the World</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -12,303 +12,301 @@
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg cc-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand cc-brand" href="./index.html">
+                <img src="images/logo.svg" alt="ChaleChalo logo" class="cc-logo"> ChaleChalo
+            </a>
 
-                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand">ChaleChalo</a>
+            <button class="navbar-toggler cc-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="./index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./destination.html">Destination</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./packages.html">Packages</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./booking.html">Booking</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contact.html">Contact</a>
-                                </li>
-                                <button type="button" class="btn btn-success">Login</button>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./destination.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button type="button" class="btn cc-btn-outline">Login</button>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!---Navigation end here-->
+    </nav>
 
-        <div class="row">
-            <div class="col">
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://images.wallpaperscraft.com/image/single/beach_sea_sand_1341994_3840x2400.jpg"
-                                class="d-block w-100" alt="beachside-img" style="height: 900px">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Explore the World</h5>
-                                <p>Discover breathtaking destinations and unforgettable adventures.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg"
-                                class="d-block w-100" alt="mountain-img" style="height: 900px">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Your Journey Begins Here</h5>
-                                <p>Plan, book, and experience travel like never before.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://wallpapercave.com/wp/wp5392707.jpg" class="d-block w-100" alt="ooty"
-                                style="height: 900px">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Travel Without Limits</h5>
-                                <p>Find the perfect destination for your next adventure.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide cc-hero" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.wallpaperscraft.com/image/single/beach_sea_sand_1341994_3840x2400.jpg"
+                    class="d-block w-100 cc-hero-img" alt="beachside-img">
+                <div class="carousel-caption">
+                    <span class="cc-kicker">ChaleChalo</span>
+                    <h2>Explore the World</h2>
+                    <p>Discover breathtaking destinations and unforgettable adventures.</p>
+                    <a href="./destination.html" class="btn cc-btn-primary mt-2">Explore Destinations</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg"
+                    class="d-block w-100 cc-hero-img" alt="mountain-img">
+                <div class="carousel-caption">
+                    <span class="cc-kicker">ChaleChalo</span>
+                    <h2>Your Journey Begins Here</h2>
+                    <p>Plan, book, and experience travel like never before.</p>
+                    <a href="./packages.html" class="btn cc-btn-primary mt-2">View Packages</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapercave.com/wp/wp5392707.jpg" class="d-block w-100 cc-hero-img" alt="ooty">
+                <div class="carousel-caption">
+                    <span class="cc-kicker">ChaleChalo</span>
+                    <h2>Travel Without Limits</h2>
+                    <p>Find the perfect destination for your next adventure.</p>
+                    <a href="./booking.html" class="btn cc-btn-primary mt-2">Start Booking</a>
                 </div>
             </div>
         </div>
-        <!-- carousel ends here -->
-
-        <div class="row">
-            <div class="col-md-12">
-                <section class="py-5 bg-light">
-                    <div class="container">
-                        <h2 class="text-center fw-bold mb-4">Why Choose ChaleChalo</h2>
-
-                        <div class="row text-center">
-                            <div class="col-4">
-                                <h5 class="fw-bold">Easy Bookings</h5>
-                                <p>Book travel packages quikly with our simple booking system.</p>
-                            </div>
-                            <div class="col-4">
-                                <h5 class="fw-bold">Best Hotels</h5>
-                                <p>We provide comfortable hotel stays at affordable prices.</p>
-                            </div>
-                            <div class="col-4">
-                                <h5 class="fw-bold">24/7 Support</h5>
-                                <p>Our travel supprot team is availabele anytime for assisteance.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <!--service section ends here-->
-
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-4">Popular Destination</h2>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="https://media.istockphoto.com/id/932088534/photo/mumbai-india-gateway-of-india.jpg?s=170667a&w=0&k=20&c=wxJutsMRgxdqLVpyVEsyJGT-OfS_-e7P_M9g_3NJ0JU="
-                                class="card-img-top" alt="gateway of India">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Mumbai</h5>
-                                <p class="card-text">Experience the charm of Mumbai's most iconic waterfront landmark.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="https://lonelyplanetimages.imgix.net/mastheads/GettyImages-514084465_high.jpg?sharp=10&vib=20&w=1200"
-                                class="card-img-top" alt="Dalhousie himachal pradesh">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Himachal Pradesh</h5>
-                                <p class="card-text">Discover the charm of misty mountains and serene landscapes.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="https://cdn.pixabay.com/photo/2020/01/21/08/11/indian-temple-4782312_1280.jpg"
-                                class="card-img-top" alt="Prem mandir mathura">
-                            <div class="card-body">
-                                <h5 class="fw-bold">Mathura</h5>
-                                <p class="card-text">Find peace and blessings in this beautiful spiritual destination.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--destination section ends here-->
-
-        <section class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-4">Featured Packages </h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Goa Beach Package</h5>
-                                <p class="card-text">5 Days/ 4 Nights</p>
-                                <h4 style="color: green;">₹15,999</h4>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Book Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Manali Adventure Package</h5>
-                                <p class="card-text">6 Days / 5 Nights</p>
-                                <h4 style="color: green;">₹18,499</h4>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Book Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Kerala Backwater Package</h5>
-                                <p class="card-text">4 Days / 3 Nights</p>
-                                <h4 style="color: green;">₹12,999</h4>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Book Now
-                                </button>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered custom-modal">
-                            <div class="modal-content">
-                                <div class="modal-header" style="background-color: rgb(10, 154, 237);">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Book Now</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <span class="input-group-text">Full Name</span>
-                                                <input type="text" aria-label="First name" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="mb-3">
-                                                <div class="input-group">
-                                                    <span class="input-group-text">Email Address</span>
-                                                    <input type="email" class="form-control"
-                                                        id="exampleFormControlInput1" placeholder="name@example.com">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p>Select Destination</p>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Select Destination
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item">Goa</a></li>
-                                                    <li><a class="dropdown-item">Manali</a></li>
-                                                    <li><a class="dropdown-item">Jaipur</a></li>
-                                                    <li><a class="dropdown-item">Kerala</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <p>Travel Date</p>
-                                            <div class="mb-3">
-                                                <input type="date" class="form-control" id="date">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <label for="nop">Number of People</label>
-                                            <input type="text" aria-label="Number of People" class="form-control"
-                                                id="nop">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                rows="3"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="text-center">
-                                                <button type="button" class="btn btn-outline-success">
-                                                    Submit Booking Request
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-        <!-- form end here -->
-
-        <!-- Footer -->
-        <footer class="bg-dark text-white text-center py-3">
-            <p class="mb-0">© 2026 ChaloChale Travel App | Designed with Bootstrap</p>
-        </footer>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
+    <!-- Why Choose Us -->
+    <section class="cc-section">
+        <div class="container">
+            <div class="cc-section-head text-center">
+                <span class="cc-kicker">Why ChaleChalo</span>
+                <h2 class="cc-title">Why Choose Us</h2>
+                <p class="cc-subtitle">Everything you need for a perfect trip, in one place.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="cc-feature text-center">
+                        <div class="cc-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M4 13h16"/></svg></div>
+                        <h5>Easy Bookings</h5>
+                        <p>Book travel packages quickly with our simple booking system.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cc-feature text-center">
+                        <div class="cc-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M15 9h4v12"/><path d="M9 7h2M9 11h2M9 15h2M9 19h2"/></svg></div>
+                        <h5>Best Hotels</h5>
+                        <p>We provide comfortable hotel stays at affordable prices.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cc-feature text-center">
+                        <div class="cc-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19a4 4 0 0 1-4 3h-3"/></svg></div>
+                        <h5>24/7 Support</h5>
+                        <p>Our travel support team is available anytime for assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="cc-section cc-section-alt">
+        <div class="container">
+            <div class="cc-section-head text-center">
+                <span class="cc-kicker">Destinations</span>
+                <h2 class="cc-title">Popular Destinations</h2>
+                <p class="cc-subtitle">Handpicked places loved by travelers across India.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="cc-dest-card">
+                        <img src="https://media.istockphoto.com/id/932088534/photo/mumbai-india-gateway-of-india.jpg?s=170667a&w=0&k=20&c=wxJutsMRgxdqLVpyVEsyJGT-OfS_-e7P_M9g_3NJ0JU="
+                            alt="Gateway of India, Mumbai">
+                        <div class="cc-dest-info">
+                            <h5>Mumbai</h5>
+                            <p>Experience the charm of Mumbai's most iconic waterfront landmark.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cc-dest-card">
+                        <img src="https://lonelyplanetimages.imgix.net/mastheads/GettyImages-514084465_high.jpg?sharp=10&vib=20&w=1200"
+                            alt="Himachal Pradesh hills">
+                        <div class="cc-dest-info">
+                            <h5>Himachal Pradesh</h5>
+                            <p>Discover the charm of misty mountains and serene landscapes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cc-dest-card">
+                        <img src="https://cdn.pixabay.com/photo/2020/01/21/08/11/indian-temple-4782312_1280.jpg"
+                            alt="Prem Mandir, Mathura">
+                        <div class="cc-dest-info">
+                            <h5>Mathura</h5>
+                            <p>Find peace and blessings in this beautiful spiritual destination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="./destination.html" class="btn cc-btn-primary">View All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packages -->
+    <section class="cc-section">
+        <div class="container">
+            <div class="cc-section-head text-center">
+                <span class="cc-kicker">Packages</span>
+                <h2 class="cc-title">Featured Packages</h2>
+                <p class="cc-subtitle">Curated trips at prices that won't break the bank.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="cc-package-card">
+                        <div class="cc-package-body">
+                            <span class="cc-package-tag">Beach</span>
+                            <h5>Goa Beach Package</h5>
+                            <p class="cc-package-meta">5 Days / 4 Nights · Hotel included</p>
+                            <div class="cc-package-footer">
+                                <div>
+                                    <span class="cc-price-label">Starting from</span>
+                                    <h4 class="cc-price">₹15,999</h4>
+                                </div>
+                                <button type="button" class="btn cc-btn-primary"
+                                    data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cc-package-card">
+                        <div class="cc-package-body">
+                            <span class="cc-package-tag">Adventure</span>
+                            <h5>Manali Adventure Package</h5>
+                            <p class="cc-package-meta">6 Days / 5 Nights · Hotel included</p>
+                            <div class="cc-package-footer">
+                                <div>
+                                    <span class="cc-price-label">Starting from</span>
+                                    <h4 class="cc-price">₹18,499</h4>
+                                </div>
+                                <button type="button" class="btn cc-btn-primary"
+                                    data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cc-package-card">
+                        <div class="cc-package-body">
+                            <span class="cc-package-tag">Relaxation</span>
+                            <h5>Kerala Backwater Package</h5>
+                            <p class="cc-package-meta">4 Days / 3 Nights · Houseboat stay</p>
+                            <div class="cc-package-footer">
+                                <div>
+                                    <span class="cc-price-label">Starting from</span>
+                                    <h4 class="cc-price">₹12,999</h4>
+                                </div>
+                                <button type="button" class="btn cc-btn-primary"
+                                    data-bs-toggle="modal" data-bs-target="#bookingModal">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal">
+            <div class="modal-content">
+                <div class="modal-header cc-modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Trip</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Your full name">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Select Destination</label>
+                            <select class="form-select">
+                                <option selected>Select a destination</option>
+                                <option>Goa</option>
+                                <option>Manali</option>
+                                <option>Jaipur</option>
+                                <option>Kerala</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Travel Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Number of People</label>
+                            <input type="number" min="1" class="form-control" placeholder="e.g. 2">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="3"
+                                placeholder="Any special requests or questions?"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="button" class="btn cc-btn-primary">Submit Booking Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cc-footer">
+        <div class="container text-center">
+            <p class="cc-footer-brand mb-2"><img src="images/logo.svg" alt="ChaleChalo logo" class="cc-footer-logo"> ChaleChalo</p>
+            <p class="mb-0">© 2026 ChaleChalo Travel App | Designed with Bootstrap</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
