@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - ChaleChalo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg cc-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand cc-brand" href="./index.html">
+                <img src="images/logo.svg" alt="ChaleChalo logo" class="cc-logo"> ChaleChalo
+            </a>
+
+            <button class="navbar-toggler cc-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./destination.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="./login.html" class="btn cc-btn-outline text-decoration-none">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="cc-page-hero cc-page-hero-alt">
+        <div class="container text-center">
+            <span class="cc-kicker cc-kicker-light">Best Deals</span>
+            <h1 class="cc-page-title">Travel Packages</h1>
+            <p class="cc-page-sub">Handpicked packages with hotels, transport and experiences included.</p>
+        </div>
+    </section>
+
+    <!-- Packages Grid -->
+    <section class="cc-section cc-curve">
+        <div class="container">
+            <div class="cc-filter-bar text-center">
+                <button class="cc-chip active" data-pkg-filter="all">All</button>
+                <button class="cc-chip" data-pkg-filter="beach">Beach</button>
+                <button class="cc-chip" data-pkg-filter="adventure">Adventure</button>
+                <button class="cc-chip" data-pkg-filter="heritage">Heritage</button>
+                <button class="cc-chip" data-pkg-filter="spiritual">Spiritual</button>
+            </div>
+
+            <div class="row g-4" id="packageGrid">
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="beach">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BeachFun.jpg?width=800" alt="Goa">
+                            <span class="cc-deal-price">₹15,999</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag">Beach</span>
+                            <h5>Goa Beach Package</h5>
+                            <p class="cc-deal-meta">5 Days / 4 Nights · North Goa stays</p>
+                            <ul class="cc-deal-list">
+                                <li>Beachside hotel stay</li>
+                                <li>Airport transfers</li>
+                                <li>Half-day city tour</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="adventure">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hadimba_Devi_Temple%2C_Hidimba_Devi_Temple_Dhungari_Temple_Manali_and_around_vrtmrgmpksk_%2841%29.jpg?width=800" alt="Manali">
+                            <span class="cc-deal-price">₹18,499</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag cc-tag-adventure">Adventure</span>
+                            <h5>Manali Adventure Package</h5>
+                            <p class="cc-deal-meta">6 Days / 5 Nights · Hillside resort</p>
+                            <ul class="cc-deal-list">
+                                <li>Solang Valley excursion</li>
+                                <li>Old Manali walking tour</li>
+                                <li>All transfers included</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="beach">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Boathouse_%287063399547%29.jpg?width=800" alt="Kerala">
+                            <span class="cc-deal-price">₹12,999</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag">Beach</span>
+                            <h5>Kerala Backwater Package</h5>
+                            <p class="cc-deal-meta">4 Days / 3 Nights · Houseboat stay</p>
+                            <ul class="cc-deal-list">
+                                <li>1-night houseboat cruise</li>
+                                <li>Kumarakom village tour</li>
+                                <li>Welcome dinner included</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="heritage">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Evening_view%2C_City_Palace%2C_Udaipur.jpg?width=800" alt="Udaipur">
+                            <span class="cc-deal-price">₹16,999</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag cc-tag-heritage">Heritage</span>
+                            <h5>Royal Rajasthan Package</h5>
+                            <p class="cc-deal-meta">6 Days / 5 Nights · Heritage hotels</p>
+                            <ul class="cc-deal-list">
+                                <li>Jaipur &amp; Udaipur stays</li>
+                                <li>Palace &amp; fort visits</li>
+                                <li>Private cab throughout</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="adventure">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Road_Padum_Zanskar_Range_Jun24_A7CR_00818.jpg?width=800" alt="Ladakh">
+                            <span class="cc-deal-price">₹24,999</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag cc-tag-adventure">Adventure</span>
+                            <h5>Ladakh Explorer Package</h5>
+                            <p class="cc-deal-meta">8 Days / 7 Nights · Leh stays</p>
+                            <ul class="cc-deal-list">
+                                <li>Pangong Lake &amp; Nubra</li>
+                                <li>Monastery visits</li>
+                                <li>Inner-line permits arranged</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="heritage">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/DarjeelingTrainFruitshop_%282%29.jpg?width=800" alt="Darjeeling">
+                            <span class="cc-deal-price">₹19,999</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag cc-tag-heritage">Heritage</span>
+                            <h5>North East Wonders Package</h5>
+                            <p class="cc-deal-meta">7 Days / 6 Nights · Gangtok &amp; Darjeeling</p>
+                            <ul class="cc-deal-list">
+                                <li>Toy train &amp; tea garden</li>
+                                <li>Tiger Hill sunrise</li>
+                                <li>Flights included</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="beach">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Coral_Reef_at_the_Andaman_Islands.jpg?width=800" alt="Andaman Islands">
+                            <span class="cc-deal-price">₹21,999</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag">Beach</span>
+                            <h5>Andaman Escape Package</h5>
+                            <p class="cc-deal-meta">6 Days / 5 Nights · Port Blair stay</p>
+                            <ul class="cc-deal-list">
+                                <li>Cellular Jail tour</li>
+                                <li>Snorkeling trip</li>
+                                <li>Ferry transfers</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="spiritual">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg?width=800" alt="Varanasi">
+                            <span class="cc-deal-price">₹9,999</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag cc-tag-spiritual">Spiritual</span>
+                            <h5>Varanasi Spiritual Package</h5>
+                            <p class="cc-deal-meta">4 Days / 3 Nights · Ghat-side hotel</p>
+                            <ul class="cc-deal-list">
+                                <li>Sunrise Ganga Aarti</li>
+                                <li>Sarnath day trip</li>
+                                <li>Guided heritage walk</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cc-deal-card" data-type="heritage">
+                        <div class="cc-deal-img">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal%2C_Agra%2C_India.jpg?width=800" alt="Agra">
+                            <span class="cc-deal-price">₹11,499</span>
+                        </div>
+                        <div class="cc-deal-body">
+                            <span class="cc-deal-tag cc-tag-heritage">Heritage</span>
+                            <h5>Golden Triangle Package</h5>
+                            <p class="cc-deal-meta">5 Days / 4 Nights · Delhi–Agra–Jaipur</p>
+                            <ul class="cc-deal-list">
+                                <li>Taj Mahal sunrise visit</li>
+                                <li>Amber Fort &amp; Hawa Mahal</li>
+                                <li>AC cab throughout</li>
+                            </ul>
+                            <a href="./booking.html" class="btn cc-btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 d-none" id="noPackages">
+                <p class="cc-muted-text">No packages found in this category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cc-footer cc-curve">
+        <div class="container text-center">
+            <p class="cc-footer-brand mb-2"><img src="images/logo.svg" alt="ChaleChalo logo" class="cc-footer-logo">
+                ChaleChalo</p>
+            <p class="mb-0">© 2026 ChaleChalo Travel App | Designed with Bootstrap</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ChaleChalo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="cc-login-body">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg cc-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand cc-brand" href="./index.html">
+                <img src="images/logo.svg" alt="ChaleChalo logo" class="cc-logo"> ChaleChalo
+            </a>
+
+            <button class="navbar-toggler cc-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./destination.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="./login.html" class="btn cc-btn-outline text-decoration-none">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="cc-login-wrap">
+        <div class="text-center mb-4 cc-reveal">
+            <a href="./index.html" class="d-inline-block text-decoration-none">
+                <img src="images/logo.svg" alt="ChaleChalo logo" style="height:64px;">
+            </a>
+            <h2 class="cc-login-title mt-2">Create Account</h2>
+            <p class="cc-muted-text">Join ChaleChalo and start planning your trips</p>
+        </div>
+
+        <div class="cc-booking-card cc-reveal">
+            <form id="signupForm" novalidate>
+                <div class="mb-3">
+                    <label class="form-label" for="suName">Full Name</label>
+                    <input type="text" class="form-control" id="suName" required
+                        placeholder="Your full name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="suEmail">Email Address</label>
+                    <input type="email" class="form-control" id="suEmail" required
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="suPassword">Password</label>
+                    <input type="password" class="form-control" id="suPassword" required minlength="8"
+                        placeholder="At least 8 characters">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="suConfirm">Confirm Password</label>
+                    <input type="password" class="form-control" id="suConfirm" required
+                        placeholder="Re-enter your password">
+                    <div class="invalid-feedback d-block text-danger d-none" id="suMatchError">
+                        Passwords do not match.
+                    </div>
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="suTerms" required>
+                    <label class="form-check-label cc-muted-text" for="suTerms">
+                        I agree to the Terms of Service and Privacy Policy
+                    </label>
+                </div>
+                <button type="submit" class="btn cc-btn-primary w-100 py-2">Sign Up</button>
+            </form>
+
+            <div id="signupSuccess" class="cc-success-card d-none">
+                <div class="cc-success-icon">✓</div>
+                <h3>Account Created!</h3>
+                <p class="cc-muted-text">Welcome aboard! You can now sign in.</p>
+                <a href="./login.html" class="btn cc-btn-primary mt-2">Go to Login</a>
+            </div>
+        </div>
+
+        <p class="text-center mt-4 cc-muted-text">
+            Already have an account? <a href="./login.html" class="cc-link-small">Sign in</a>
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
